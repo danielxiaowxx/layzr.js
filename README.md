@@ -6,6 +6,10 @@ A modern lazy loading library for images.
 
 * [Demo Page](http://callmecavs.github.io/layzr.js/)
 
+## 修改内容
+
+- 只是build的时候输出多一个min.js文件而已
+
 ## Getting Started
 
 Follow these steps:

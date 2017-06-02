@@ -1,41 +1,33 @@
 {
-  "name":        "layzr.js",
+  "name": "layzr.js",
   "description": "A modern lazy loading library for images.",
-
-  "main":        "dist/layzr.js",
-  "module":      "dist/layzr.module.js",
+  "main": "dist/layzr.js",
+  "module": "dist/layzr.module.js",
   "jsnext:main": "dist/layzr.module.js",
-
   "version": "2.2.2",
   "license": "MIT",
-
   "repository": "callmecavs/layzr.js",
-
   "author": {
-    "name":  "Michael Cavalea",
+    "name": "Michael Cavalea",
     "email": "callmecavs@gmail.com",
-    "url":   "http://callmecavs.com/"
+    "url": "http://callmecavs.com/"
   },
-
   "scripts": {
-    "prebuild":   "eslint src",
-    "build":      "rollup -c",
-    "dev":        "rollup -c -w -m inline",
+    "prebuild": "eslint src",
+    "build": "rollup -c",
+    "dev": "rollup -c -w -m inline",
     "prepublish": "npm run build",
-    "server":     "python -m SimpleHTTPServer 3000"
+    "server": "python -m SimpleHTTPServer 3000"
   },
-
   "keywords": [
     "images",
     "lazy",
     "load",
     "scroll"
   ],
-
   "dependencies": {
     "knot.js": "^1.1.5"
   },
-
   "devDependencies": {
     "babel-eslint": "^7.1.1",
     "babel-plugin-external-helpers": "^6.18.0",
@@ -48,6 +40,8 @@
     "rollup": "^0.41.1",
     "rollup-plugin-babel": "^2.7.1",
     "rollup-plugin-node-resolve": "^2.0.0",
-    "rollup-watch": "^3.2.2"
+    "rollup-plugin-uglify": "^2.0.1",
+    "rollup-watch": "^3.2.2",
+    "uglify-es": "^3.0.15"
   }
 }
